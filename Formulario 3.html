@@ -1,35 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con textarea</title>
+    
+    <!-- Carga de la librería de íconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-	<h1>Formularios</h1>
-	<p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
-	<p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
-	esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
-	ASP, ASP.NET, Node, etc.) </p>
-	
-<h2>Formulario con text area</h2>
-	<form action="" method="post">
-	Ingresa tu nombre:
-	<input type="text" name="nombre">
-	<br>
-	Ingresa tu correo:
-	<input type="email" name="correo">
-	<br>
-	Ingresa tus comentarios:
-	<textarea name="comentarios" rows="1" cols="10"></textarea>
-	<br>
-	<input type="submit" value="enviar">
-	<input type="reset" value="borrar">
-	</form>
+
+    <!-- Encabezado y texto informativo -->
+    <h1>Formularios</h1>
+    <p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
+    <p>
+        El HTML no tiene la responsabilidad de registrar los datos en el servidor,
+        esta actividad se delega a través de un lenguaje que se ejecute en el servidor (PHP, ASP, ASP.NET, Node, etc.).
+    </p>
+
+    <h2>Formulario con text area</h2>
+    
+    <!-- Inicio del formulario -->
+    <form action="" method="post">
+
+        <!-- Campo de texto estándar para el nombre -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br>
+
+        <!-- Campo para correo electrónico-->
+        Ingresa tu correo:
+        <input type="email" name="correo">
+        <br>
+
+        <!-- Caja de texto multilínea para comentarios largos -->
+        Ingresa tus comentarios:
+        <textarea name="comentarios" rows="4" cols="30"></textarea>
+        <br>
+
+        <!-- Botón para enviar la información -->
+        <input type="submit" value="enviar">
+        
+        <!-- Botón para borrar y reiniciar los campos -->
+        <input type="reset" value="borrar">
+
+    </form> <!-- Fin del formulario -->
+
 </body>
 </html>

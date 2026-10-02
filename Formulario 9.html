@@ -1,30 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formulario con campos ocultos</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con campos ocultos</title>
+    
+    <!-- Carga de la librería de íconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-	<h1>Formularios</h1>
-	<p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
-	<p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
-	esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
-	ASP, ASP.NET, Node, etc.) </p>
 
-<h2>Formulario con campos ocultos</h2>
-	<form action="" method="post">
-	<input type="hidden" name="hora" value="3:30">
-	Ingresa tu nombre:
-	<input type="text" name="nombre">
-	<br>
-	<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
-	<button type="reset">Borrar <i class="fa fa-trash"></i></button>
-	</form>
+    <!-- Encabezado y texto explicativo -->
+    <h1>Formularios</h1>
+    <p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
+    <p>
+        El HTML no tiene la responsabilidad de registrar los datos en el servidor,
+        esta actividad se delega a través de un lenguaje que se ejecute en el servidor (PHP, ASP, ASP.NET, Node, etc.).
+    </p>
+
+    <h2>Formulario con campos ocultos</h2>
+    
+    <!-- Inicio del formulario -->
+    <form action="" method="post">
+
+        <!-- Campo oculto: Invisible para el usuario, pero envía datos al servidor -->
+        <input type="hidden" name="hora" value="3:30">
+
+        <!-- Campo de texto estándar para el nombre -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+        <br><br>
+
+        <!-- Botón para enviar datos -->
+        <button type="submit">
+            Enviar <i class="fa-regular fa-paper-plane"></i>
+        </button>
+
+        <!-- Botón para reiniciar/limpiar los campos del formulario -->
+        <button type="reset">
+            Borrar <i class="fa fa-trash"></i>
+        </button>
+
+    </form> <!-- Fin del formulario -->
+
 </body>
 </html>

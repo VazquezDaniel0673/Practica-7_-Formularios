@@ -1,34 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios en HTML</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios con checkbox</title>
+    
+    <!-- Carga de la librería de íconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-	<h1>Formularios</h1>
-	<p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
-	<p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
-	esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
-	ASP, ASP.NET, Node, etc.) </p>
-	
-<h2>Formularios con checkbox</h2>
-	<form action="" method="post">
-	Ingresa tu nombre:
-	<input type="text" name="nombre">
 
-	<br>
-	Selecciona los lenguajes que conozcas:
-	<br>
-	<input type="checkbox" name="Java">Java <br>
-	<input type="checkbox" name="Python"> Python <br>
-	<input type="checkbox" name="C#">C# <br>
-	<input type="checkbox" name="Flutter"> Flutter <br>
-	</form>
+    <!-- Encabezado y texto explicativo -->
+    <h1>Formularios</h1>
+    <p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
+    <p>
+        El HTML no tiene la responsabilidad de registrar los datos en el servidor,
+        esta actividad se delega a través de un lenguaje que se ejecute en el servidor (PHP, ASP, ASP.NET, Node, etc.).
+    </p>
+
+    <h2>Formularios con checkbox</h2>
+    
+    <!-- Inicio del formulario -->
+    <form action="" method="post">
+
+        <!-- Campo de texto para el nombre -->
+        Ingresa tu nombre:
+        <input type="text" name="nombre">
+
+        <br><br>
+        Selecciona los lenguajes que conozcas:
+        <br>
+
+        <!-- Casillas de verificación (Checkbox): Permiten seleccionar MÚLTIPLES opciones -->
+        <input type="checkbox" name="java" value="java"> Java <br>
+        <input type="checkbox" name="python" value="python"> Python <br>
+        <input type="checkbox" name="csharp" value="csharp"> C# <br>
+        <input type="checkbox" name="flutter" value="flutter"> Flutter <br>
+
+        <br>
+        
+        <!-- Botón para enviar la información -->
+        <input type="submit" value="enviar">
+
+    </form> <!-- Fin del formulario -->
+
 </body>
 </html>

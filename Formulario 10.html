@@ -1,46 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Formularios con agrupamiento</title>
-<!-- Libreria de iconos en linea -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
-awesome/7.3.1/css/all.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios con agrupamiento</title>
+    
+    <!-- Carga de la librería de íconos Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-	<h1>Formularios</h1>
-	<p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
-	<p>El HTML no tiene la responsabilidad de registrar los datos en el servidor,
-	esta actividad se delega a traves de un lenguaje que se ejecute en el servidor (PHP,
-	ASP, ASP.NET, Node, etc.) </p>
 
-<h2>Formularios con agrupamiento</h2>
-	<form action="" method="post">
-	<fieldset>
-	<legend>Datos personales</legend>
-	Nombre y apellido:
-	<input type="text" name="nombre_apellido"><br>
-	Documento valido:
-	<input type="file" name="documento"><br>
-	Fecha de nacimiento:
+    <!-- Encabezado y texto explicativo -->
+    <h1>Formularios</h1>
+    <p>Un formulario permite al visitante cargar datos y que sean enviados al servidor.</p>
+    <p>
+        El HTML no tiene la responsabilidad de registrar los datos en el servidor,
+        esta actividad se delega a través de un lenguaje que se ejecute en el servidor (PHP, ASP, ASP.NET, Node, etc.).
+    </p>
 
-	<input type="date" name="fecha_nacimiento">
-	</fieldset>
-	<fieldset>
-	<legend>Datos de estudio:</legend>
-	Nombre de la escuela:
-	<input type="text" name="escuela"><br>
-	Certificado valido:
-	<input type="file" name="certificado"><br>
-	Fecha de egreso:
-	<input type="date" name="fecha_egreso">
-	</fieldset>
-	<br>
-	<button type="submit">Enviar <i class="fa-regular fa-paper-plane"></i> </button>
-	<button type="reset">Borrar <i class="fa fa-trash"></i></button>
-	</form>
+    <h2>Formularios con agrupamiento</h2>
+    
+    <!-- enctype="multipart/form-data" es necesario por los campos de tipo archivo (<input type="file">) -->
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <!-- Datos personales -->
+        <fieldset>
+            <!-- Título o etiqueta del grupo -->
+            <legend>Datos personales</legend>
+
+            Nombre y apellido:
+            <input type="text" name="nombre_apellido"><br>
+
+            Documento válido:
+            <input type="file" name="documento"><br>
+
+            Fecha de nacimiento:
+            <input type="date" name="fecha_nacimiento">
+        </fieldset>
+
+        <br>
+
+        <!-- Segundo grupo de campos: Datos de estudio -->
+        <fieldset>
+            <!-- Título o etiqueta del grupo -->
+            <legend>Datos de estudio:</legend>
+
+            Nombre de la escuela:
+            <input type="text" name="escuela"><br>
+
+            Certificado válido:
+            <input type="file" name="certificado"><br>
+
+            Fecha de egreso:
+            <input type="date" name="fecha_egreso">
+        </fieldset>
+
+        <br>
+
+        <!-- Botón para enviar todos los datos del formulario -->
+        <button type="submit">
+            Enviar <i class="fa-regular fa-paper-plane"></i>
+        </button>
+
+        <!-- Botón para borrar/limpiar los campos de ambos grupos -->
+        <button type="reset">
+            Borrar <i class="fa fa-trash"></i>
+        </button>
+
+    </form> <!-- Fin del formulario -->
+
 </body>
+</html>
+</html>
 </html>
